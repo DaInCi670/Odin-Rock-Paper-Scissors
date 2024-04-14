@@ -11,4 +11,9 @@ function getComputerChoice() {
   } else return "scissors";
 }
 
+//Function to get player choice
+function getplayerSelection() {
+  let playerChoice = prompt("Rock, Paper or Scissors:");
+  return playerChoice;
+}
 

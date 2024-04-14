@@ -1,5 +1,6 @@
 "use strict";
 
+//Function to get computer choice between rock, paper and scissors
 function getComputerChoice() {
   let randomizer = Math.ceil(Math.random() * 3);
 

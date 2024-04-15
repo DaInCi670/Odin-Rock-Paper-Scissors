@@ -64,6 +64,7 @@ function playRound(a, b) {
   }
 }
 
+//Function to play game 5 times and log scores
 function playGame() {
   for (let i = 1; i <= 5; i++) {
     playRound(getplayerSelection(), getComputerChoice());

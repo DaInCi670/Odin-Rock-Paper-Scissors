@@ -21,7 +21,6 @@ function getplayerSelection() {
   return playerChoice;
 }
 
-
 //Function to play a round
 function playRound(a, b) {
   if (a === b) {
@@ -65,6 +64,22 @@ function playRound(a, b) {
   }
 }
 
+function playGame() {
+  for (let i = 1; i <= 5; i++) {
+    playRound(getplayerSelection(), getComputerChoice());
+  }
+  if (playerScore === computerScore) {
+    console.log(
+      `That was Close! Match Ended In A tie: You-${playerScore} : AI-${computerScore}`
+    );
+  }
+  return playerScore > computerScore
+    ? console.log(
+        `Congratulations! You Won The Game: You-${playerScore} : AI-${computerScore}`
+      )
+    : console.log(
+        `Oh No! You Lost The Game: You-${playerScore} : AI-${computerScore}`
+      );
+}
 
-
-
+playGame();

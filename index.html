@@ -2,34 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Odin Rock Paper Scissors</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="boon">
+    <div class="game-outer-container">
       <div class="container">
         <h1>Rock Paper Scissors</h1>
-        <div class="rpz-display">
+        <div class="rps-display">
           <div class="player-display">
-            <div class="player-text text"><h5>You</h5></div>
-            <div class="damn" id="player"></div>
+            <div class="player-text play-score">
+              <h5>You: <span id="player-score"> </span></h5>
+            </div>
+            <div class="play-screen" id="player"></div>
           </div>
           <div class="computer-display">
-            <div class="computer-text text"><h5>AI</h5></div>
-            <div class="damn" id="computer"></div>
+            <div class="computer-text play-score">
+              <h5>AI: <span id="computer-score"> </span></h5>
+            </div>
+            <div class="play-screen" id="computer"></div>
           </div>
         </div>
         <div class="score-text"><h4>Welcome</h4></div>
         <div class="rps-select">
-          <div class="rock rip" id="rock">
-            <p class="rip-core" id="rock">🪨</p>
+          <div class="rock play-select" id="rock">
+            <p class="play-select-icon" id="rock">🪨</p>
           </div>
-          <div class="paper rip" id="paper">
-            <p class="rip-core" id="paper">📃</p>
+          <div class="paper play-select" id="paper">
+            <p class="play-select-icon" id="paper">📃</p>
           </div>
-          <div class="scissors rip" id="scissors">
-            <p class="rip-core" id="scissors">✂️</p>
+          <div class="scissors play-select" id="scissors">
+            <p class="play-select-icon" id="scissors">✂️</p>
           </div>
         </div>
       </div>

@@ -1,0 +1,105 @@
+* {
+  user-select: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #e44969;
+}
+
+.game-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.game-outer-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rps-display {
+  display: flex;
+  column-gap: 50px;
+}
+
+.player-display,
+.computer-display {
+  width: 300px;
+  height: 250px;
+  background-color: #282828;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.play-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: black;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+h4 {
+  color: black;
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 32px;
+  color: white;
+}
+
+.play-select {
+  width: 100px;
+  height: 100px;
+  background-color: #282828;
+  border-radius: 50%;
+  transition: all 0.1s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rps-select {
+  height: 150px;
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.play-select:hover {
+  transform: scale(1.1);
+}
+
+.play-select-icon {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.play-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  font-size: 150px;
+}
+
+.score-text {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

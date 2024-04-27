@@ -31,7 +31,7 @@ function getComputerChoice() {
 //Function to play a round
 function playRound(a, b) {
   if (a === b) {
-    score.textContent = `No Score Awarded!`;
+    score.textContent = `No Points Awarded!`;
     currPlayerScore.textContent = playerScore;
     currComputerScore.textContent = computerScore;
   } else if (a === "🪨") {
